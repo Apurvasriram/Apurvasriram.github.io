@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -444,22 +444,15 @@
       letter-spacing: .02em;
     }
 
-    /* Period label above each card */
+    /* Period label inside card, below company */
     .tc-period {
       display: block;
       font-family: var(--mono);
       font-size: .68rem;
-      color: var(--cyan);
-      white-space: nowrap;
+      color: var(--muted);
       letter-spacing: .04em;
-      margin-bottom: 8px;
-      text-align: right;
-      padding-right: 4px;
-    }
-    .tc-item.tc-r .tc-period {
-      text-align: left;
-      padding-right: 0;
-      padding-left: 4px;
+      margin-bottom: 14px;
+      margin-top: 4px;
     }
 
     /* Education milestone cards */
@@ -821,9 +814,10 @@
           <span class="tag" style="margin-left:8px;font-size:.68rem;">$60M Series A</span>
         </p>
         <p class="hero-desc">
-          I build AI-driven systems and distributed backends at scale — from autonomous multi-agent
-          code remediation platforms to high-traffic APIs handling billions of requests.
-          Currently architecting the future of enterprise ERP modernization.
+          Backend systems at scale. AI pipelines in production. Enterprise infrastructure that doesn't break.
+          I've built across the full technical stack — distributed systems, multi-agent AI, cloud infrastructure,
+          and the integrations that tie complex enterprises together. My focus is engineering that compounds:
+          built right the first time, scales without rewriting.
         </p>
         <div class="hero-ctas">
           <a href="#experience" class="btn-primary">View My Work</a>
@@ -896,8 +890,8 @@
           <div class="stat-label">Enterprise code objects automated by AI agents I built</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">5+</div>
-          <div class="stat-label">Fortune-scale enterprise systems integrated end-to-end</div>
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI systems in production across enterprise, fintech &amp; healthcare</div>
         </div>
       </div>
     </div>
@@ -916,14 +910,14 @@
       <!-- ① Tessera Labs — LEFT, featured -->
       <div class="tc-item tc-featured fade-in">
         <div class="tc-dot"><img src="https://logo.clearbit.com/tesseralabs.ai" alt="Tessera Labs" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'TL'}))" /></div>
-        <span class="tc-period">Jul 2025 — Present</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Founding Engineer</div>
           <div class="exp-company">
             <a href="https://www.tesseralabs.ai/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Tessera Labs ↗</a>
             <span class="badge">$60M Series A</span>
             <span class="badge" style="background:rgba(0,212,255,.12);">Current</span>
           </div>
+          <span class="tc-period">Jul 2025 — Present</span>
           <ul class="exp-bullets">
             <li>Drove <strong>0→1 product architecture</strong> for an AI-native enterprise platform — making foundational technical decisions that balance startup velocity against long-term scalability, with no prior playbook and direct business impact on enterprise sales.</li>
             <li>Pioneered a technically novel <strong>multi-agent LLM remediation engine</strong> processing 200K+ ABAP objects — compressing multi-year SAP ECC→S/4HANA migrations into weeks, a result no prior tooling came close to.</li>
@@ -937,12 +931,12 @@
       <!-- ② USAA — RIGHT -->
       <div class="tc-item tc-r fade-in">
         <div class="tc-dot"><img src="https://logo.clearbit.com/usaa.com" alt="USAA" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'USAA'}))" /></div>
-        <span class="tc-period">Jul 2024 — Jul 2025</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Engineer</div>
           <div class="exp-company">
             <a href="https://www.usaa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">USAA ↗</a>
           </div>
+          <span class="tc-period">Jul 2024 — Jul 2025</span>
           <ul class="exp-bullets">
             <li>Designed and validated a <strong>distributed Property Insurance API serving ~1.3B requests/day</strong> — engineered for horizontal scale, fault tolerance, and sub-50ms p99 latency under sustained peak load in US financial services.</li>
             <li>Owned full <strong>re-architecture of critical policy workflows</strong> from legacy monolith to cloud-native microservices — Redis caching, optimised query patterns, zero-downtime migration for millions of active customers.</li>
@@ -955,10 +949,10 @@
       <!-- ③ Matchmove — LEFT -->
       <div class="tc-item fade-in">
         <div class="tc-dot"><img src="./static/media/Matchmove.d832a40e.jpg" alt="Matchmove" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'MM'}))" /></div>
-        <span class="tc-period">Jul 2023</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Developer Intern</div>
           <div class="exp-company"><a href="https://www.matchmove.com/" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none;">Matchmove Pte Ltd. ↗</a></div>
+          <span class="tc-period">Jul 2023</span>
           <ul class="exp-bullets">
             <li>Overhauled <strong>API documentation end-to-end</strong> to cover both success and error paths, cutting integration-related support queries by <strong>30%</strong> and enabling faster partner onboarding.</li>
           </ul>
@@ -968,10 +962,10 @@
       <!-- ④ Voltai — RIGHT -->
       <div class="tc-item tc-r fade-in">
         <div class="tc-dot tc-text"><div class="tc-dot-text">VT</div></div>
-        <span class="tc-period">May 2023 — Jul 2023</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Developer Intern</div>
           <div class="exp-company"><a href="https://www.linkedin.com/company/voltai-inc/" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none;">Voltai ↗</a></div>
+          <span class="tc-period">May 2023 — Jul 2023</span>
           <ul class="exp-bullets">
             <li>Designed the product architecture from first principles for an <strong>AI-powered insights platform</strong>.</li>
             <li>Built web scrapers targeting discussion forums as training signal, improving model precision by <strong>20%</strong>.</li>
@@ -983,12 +977,12 @@
       <!-- ⑤ NYU — LEFT, education -->
       <div class="tc-item tc-edu fade-in">
         <div class="tc-dot"><img src="./static/media/NYU_Logo.934f3bce.png" alt="NYU" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'NYU'}))" /></div>
-        <span class="tc-period">Aug 2022 — May 2024</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">MS, Computer Science &nbsp;<span style="font-weight:400;font-size:.85rem;color:var(--muted)">GPA 3.9 / 4.0</span></div>
           <div class="exp-company">
             <a href="https://www.nyu.edu" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">New York University ↗</a>
           </div>
+          <span class="tc-period">Aug 2022 — May 2024</span>
           <ul class="exp-bullets">
             <li>Built the theoretical foundation across <strong>Algorithms, Distributed Systems, Databases, OS, Cloud Computing, Security &amp; Privacy, Big Data, and ML</strong> — every production decision I make draws from this depth.</li>
             <li>Concurrent <strong>NYU Stern</strong> coursework (4.0/4.0) in Financial Information Systems — trained to connect technical architecture to business strategy, product roadmaps, and stakeholder impact.</li>
@@ -1000,12 +994,12 @@
       <!-- ⑥ PayPal — RIGHT -->
       <div class="tc-item tc-r fade-in">
         <div class="tc-dot"><img src="./static/media/Paypal.4c1bc940.jpg" alt="PayPal" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'PP'}))" /></div>
-        <span class="tc-period">Jul 2021 — Jun 2022</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Engineer</div>
           <div class="exp-company">
             <a href="https://www.paypal.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">PayPal ↗</a>
           </div>
+          <span class="tc-period">Jul 2021 — Jun 2022</span>
           <ul class="exp-bullets">
             <li>Architected and shipped <strong>PayPal Working Capital</strong> — an enterprise-grade instant merchant loan product — across 2 European markets (France, Netherlands) using Spring Boot microservices, with end-to-end ownership of system design, API contracts, compliance integration, and production rollout.</li>
             <li>Built and deployed an <strong>ML-powered recommender system (97% accuracy)</strong> into customer support operations — directly reducing call redirect rates and improving CSAT metrics across PayPal's global support org.</li>
@@ -1019,12 +1013,12 @@
       <!-- ⑦ Samsung R&D — LEFT -->
       <div class="tc-item fade-in">
         <div class="tc-dot"><img src="./static/media/Samsung.415f8b40.png" alt="Samsung" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'SEC'}))" /></div>
-        <span class="tc-period">May 2020 — Jun 2020</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Engineer Intern</div>
           <div class="exp-company">
             <a href="https://research.samsung.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Samsung R&amp;D ↗</a>
           </div>
+          <span class="tc-period">May 2020 — Jun 2020</span>
           <ul class="exp-bullets">
             <li>Engineered a <strong>custom kernel-level Contiguous Memory Allocator</strong> with DMA-BUF API for Linux multimedia subsystems — demonstrating low-level systems expertise at the hardware/software boundary where performance margins are in microseconds.</li>
             <li>Designed <strong>modular kernel architecture</strong> (importer/exporter modules) for cross-process memory sharing — enabling user-space applications to access shared buffers without address coupling.</li>
@@ -1036,10 +1030,10 @@
       <!-- ⑧ Microsoft / Ally.io — RIGHT -->
       <div class="tc-item tc-r fade-in">
         <div class="tc-dot"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" alt="Microsoft" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'MSFT'}))" /></div>
-        <span class="tc-period">Dec 2019 — Jan 2020</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Developer Intern</div>
           <div class="exp-company"><a href="https://www.microsoft.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Microsoft ↗</a> · <a href="https://www.linkedin.com/company/ally-io/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Ally.io ↗</a></div>
+          <span class="tc-period">Dec 2019 — Jan 2020</span>
           <ul class="exp-bullets">
             <li>Learned the earliest and most durable engineering lesson: <strong>the best UX improvements are invisible</strong> — a 10% reduction in subscription management overhead came not from adding more code, but from removing the right complexity.</li>
             <li>Completed a <strong>full production software delivery cycle</strong> (JIRA → build → QA → release) on a live B2B SaaS product — built the muscle memory for disciplined delivery that scales from intern to Founding Engineer.</li>
@@ -1051,10 +1045,10 @@
       <!-- ⑨ IIT Madras — LEFT, research -->
       <div class="tc-item tc-edu fade-in">
         <div class="tc-dot"><img src="https://upload.wikimedia.org/wikipedia/en/6/69/IIT_Madras_Logo.svg" alt="IIT Madras" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'IIT-M'}))" /></div>
-        <span class="tc-period">May 2019 — Jun 2019</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Research Intern — 5G Wireless</div>
           <div class="exp-company"><a href="https://www.iitm.ac.in" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Indian Institute of Technology Madras ↗</a></div>
+          <span class="tc-period">May 2019 — Jun 2019</span>
           <ul class="exp-bullets">
             <li>Contributed to <strong>active 5G wireless research at IIT Madras</strong> — one of Asia's top-ranked research institutions — working on novel Invertible Huffman encoding for multi-variable joint probability distributions alongside faculty actively publishing in the field.</li>
             <li>The mathematical foundations here — <strong>information theory, entropy, Markov processes, probabilistic encoding</strong> — are the same foundations that power modern ML systems, transformers, and the LLM pipelines I now build in production. This wasn't tangential; it was foundational.</li>
@@ -1066,10 +1060,10 @@
       <!-- ⑩ Kaleidofin — RIGHT -->
       <div class="tc-item tc-r fade-in">
         <div class="tc-dot"><img src="https://logo.clearbit.com/kaleidofin.com" alt="Kaleidofin" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'KF'}))" /></div>
-        <span class="tc-period">Dec 2018 — Jan 2019</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">Software Developer Intern</div>
           <div class="exp-company"><a href="https://www.kaleidofin.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Kaleidofin ↗</a></div>
+          <span class="tc-period">Dec 2018 — Jan 2019</span>
           <ul class="exp-bullets">
             <li>First exposure to <strong>building in a regulated industry</strong> — conducting E-KYC competitive analysis taught me early that in fintech, compliance isn't a feature you add later; it's an architectural constraint you design around from day one.</li>
             <li>Translated customer requirements into <strong>structured UX specifications</strong> — the gap between what users ask for and what they actually need is where product thinking begins, and this role built that instinct before I wrote a single line of production code.</li>
@@ -1081,12 +1075,12 @@
       <!-- ⑪ NIT Trichy — LEFT, origin -->
       <div class="tc-item tc-edu fade-in">
         <div class="tc-dot"><img src="./static/media/Nitt.ef007276.png" alt="NIT Trichy" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'NITT'}))" /></div>
-        <span class="tc-period">Jul 2017 — May 2021</span>
-        <div class="exp-card">
+                <div class="exp-card">
           <div class="exp-title">BTech (Hons.) ECE · Minor: CS &nbsp;<span style="font-weight:400;font-size:.85rem;color:var(--muted)">GPA 9.13 / 10</span></div>
           <div class="exp-company">
             <a href="https://www.nitt.edu" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">NIT Trichy ↗</a>
           </div>
+          <span class="tc-period">Jul 2017 — May 2021</span>
           <ul class="exp-bullets">
             <li>Built the <strong>systems foundation</strong> across Networks &amp; Protocols, Network Security, Software Engineering, Computer Architecture, Probability, and Optimisation — where the instinct for how complex systems actually work was formed, from signal to software.</li>
             <li>Graduated <strong>top of cohort (9.13/10)</strong> — secured competitive research internships at Samsung R&amp;D and IIT Madras during undergrad, and earned a direct full-time offer from PayPal straight from campus.</li>
