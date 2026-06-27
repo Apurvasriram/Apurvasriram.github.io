@@ -444,21 +444,22 @@
       letter-spacing: .02em;
     }
 
-    /* Period label near center line */
+    /* Period label above each card */
     .tc-period {
-      position: absolute;
-      right: -172px;
-      top: 23px;
+      display: block;
       font-family: var(--mono);
       font-size: .68rem;
-      color: var(--muted);
+      color: var(--cyan);
       white-space: nowrap;
       letter-spacing: .04em;
+      margin-bottom: 8px;
+      text-align: right;
+      padding-right: 4px;
     }
     .tc-item.tc-r .tc-period {
-      right: auto;
-      left: -172px;
-      text-align: right;
+      text-align: left;
+      padding-right: 0;
+      padding-left: 4px;
     }
 
     /* Education milestone cards */
@@ -954,7 +955,7 @@
       <!-- ③ Matchmove — LEFT -->
       <div class="tc-item fade-in">
         <div class="tc-dot"><img src="./static/media/Matchmove.d832a40e.jpg" alt="Matchmove" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'MM'}))" /></div>
-        <span class="tc-period">Jul 2023 — Aug 2023</span>
+        <span class="tc-period">Jul 2023</span>
         <div class="exp-card">
           <div class="exp-title">Software Developer Intern</div>
           <div class="exp-company"><a href="https://www.matchmove.com/" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none;">Matchmove Pte Ltd. ↗</a></div>
@@ -1080,7 +1081,7 @@
       <!-- ⑪ NIT Trichy — LEFT, origin -->
       <div class="tc-item tc-edu fade-in">
         <div class="tc-dot"><img src="./static/media/Nitt.ef007276.png" alt="NIT Trichy" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'NITT'}))" /></div>
-        <span class="tc-period">2017 — 2021</span>
+        <span class="tc-period">Jul 2017 — May 2021</span>
         <div class="exp-card">
           <div class="exp-title">BTech (Hons.) ECE · Minor: CS &nbsp;<span style="font-weight:400;font-size:.85rem;color:var(--muted)">GPA 9.13 / 10</span></div>
           <div class="exp-company">
