@@ -405,7 +405,7 @@
     /* Logo dot on center line */
     .tc-dot {
       position: absolute;
-      right: -26px;
+      right: calc(-25px - 4.17%);
       top: 16px;
       width: 50px;
       height: 50px;
@@ -420,7 +420,7 @@
       overflow: hidden;
       transition: box-shadow .3s, border-color .3s;
     }
-    .tc-item.tc-r .tc-dot { right: auto; left: -26px; }
+    .tc-item.tc-r .tc-dot { right: auto; left: calc(-25px - 4.17%); }
     .tc-dot:hover, .tc-featured .tc-dot {
       border-color: var(--cyan);
       box-shadow: 0 0 28px var(--cyan-mid);
@@ -951,8 +951,21 @@
         </div>
       </div>
 
-      <!-- ③ Voltai — LEFT -->
+      <!-- ③ Matchmove — LEFT -->
       <div class="tc-item fade-in">
+        <div class="tc-dot"><img src="./static/media/Matchmove.d832a40e.jpg" alt="Matchmove" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'MM'}))" /></div>
+        <span class="tc-period">Jul 2023 — Aug 2023</span>
+        <div class="exp-card">
+          <div class="exp-title">Software Developer Intern</div>
+          <div class="exp-company"><a href="https://www.matchmove.com/" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none;">Matchmove Pte Ltd. ↗</a></div>
+          <ul class="exp-bullets">
+            <li>Overhauled <strong>API documentation end-to-end</strong> to cover both success and error paths, cutting integration-related support queries by <strong>30%</strong> and enabling faster partner onboarding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ④ Voltai — RIGHT -->
+      <div class="tc-item tc-r fade-in">
         <div class="tc-dot tc-text"><div class="tc-dot-text">VT</div></div>
         <span class="tc-period">May 2023 — Jul 2023</span>
         <div class="exp-card">
@@ -962,19 +975,6 @@
             <li>Designed the product architecture from first principles for an <strong>AI-powered insights platform</strong>.</li>
             <li>Built web scrapers targeting discussion forums as training signal, improving model precision by <strong>20%</strong>.</li>
             <li>Shipped highlighting features that surfaced key insights faster, increasing customer satisfaction by <strong>15%</strong>.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ④ Matchmove — RIGHT -->
-      <div class="tc-item tc-r fade-in">
-        <div class="tc-dot"><img src="./static/media/Matchmove.d832a40e.jpg" alt="Matchmove" onerror="this.parentNode.classList.add('tc-text');this.replaceWith(Object.assign(document.createElement('div'),{className:'tc-dot-text',textContent:'MM'}))" /></div>
-        <span class="tc-period">Jul 2023 — Aug 2023</span>
-        <div class="exp-card">
-          <div class="exp-title">Software Developer Intern</div>
-          <div class="exp-company"><a href="https://www.matchmove.com/" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none;">Matchmove Pte Ltd. ↗</a></div>
-          <ul class="exp-bullets">
-            <li>Overhauled <strong>API documentation end-to-end</strong> to cover both success and error paths, cutting integration-related support queries by <strong>30%</strong> and enabling faster partner onboarding.</li>
           </ul>
         </div>
       </div>
